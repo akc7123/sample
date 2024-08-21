@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.sidebar{ 
+    width: 300px;
+    background-color:#000000;
+   position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0%;
+   padding: 7px;
+   height: 400px;
+}
+
+ .sidbar-nav{
+  background-color: rgb(19, 18, 18);
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+
+.sidbar-nav .logo{
+   width: 120px; 
+}
+
+.sidbar-nav .logo img{
+    width: 100%; 
+ }
+
+ .sidbar-nav ul{
+    list-style: none;
+
+}
+
+.sidbar-nav ul li{
+
+padding: 10px 20px;
+}
+
+.sidbar-nav ul li a{
+    
+  text-decoration: none;
+  color: #b3b3b3;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+
+.sidbar-nav ul li a i{
+  font-size: 20px;
+  margin-right: 10px ;
+
+}
+
+.library::after{
+ content:'+';
+ float: right;
+  text-align: center;
+ padding: 5px;
+ border-radius: 50%;
+ font-size: 15px;
+}
+
+.create-playlist{
+  height: 120px;
+  background-color: #353535;
+  padding: 30px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  
+  
+}
+.sidebar-scroll{
+  height: 120px;
+  overflow: auto;
+         
+  
+}
+.sidebar-scroll::-webkit-scrollbar{
+  background: transparent;
+ }
+.sidebar-scroll:hover::-webkit-scrollbar-thumb{
+  background: #acabab;
+  width: 10px;
+ }
+    
+.create-playlist h4{
+  color: aliceblue;
+  font-size: 15px;
+}
+.create-playlist p{
+  color: #fff;
+  font-size: 12px;
+  margin: 12px 0;
+}
+.create-playlist button{
+ padding: 8px;
+ border: 0;
+ outline: 0;
+ border-radius: 20px;
+ font-weight: 600;
+}
+
+.privacy ul li a{
+  text-decoration: none;
+  color: #797777;  
+  font-size:12px ;
+  font-weight: 600;
+  margin:0 5px ;
+}
+.privacy ul li{
+  padding-bottom: 5px;
+ }
+.privacy{
+ padding: 0 12px;
+ margin-top: 30px; 
+}
+ 
+
+.privacy ul li a:hover{
+  text-decoration: underline;
+
+}
+.eng-botton{
+  padding: 20px 30px; 
+ 
+}
+.eng-botton button{
+  padding: 10px 30px;
+  background: transparent; 
+  border: 0;
+  outline: none;
+  color: #fff;
+  border:1px solid #818080 ;
+  border-radius: 20px;
+  margin: 20px 0;
+ 
+}
+.eng-botton button:hover{
+  padding: 11px 31px;
+  border: 1px solid #fff;
+
+
+}
+
+
+
+
+/* -------------------------- */
+
+.mani-section{
+  margin-left: 300px;
+  background-color: #141414;
+   height:780px;
+  
+}
+.mani-section .top-nave{
+   padding: 25px 30px; 
+   background-color: #1b1b1b;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+
+   
+}
+
+.mani-section .top-nave button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  
+
+}
+.mani-section .top-nave button i{
+  color: #5c5a5a;
+  font-size: 22px;
+  margin-right: 18px;
+  
+}
+.top-nave .sing .singup{
+
+  color: #615f5f;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 15px;
+  
+}
+.top-nave .sing .login{
+  color: #615f5f;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #fff;
+  padding: 6px 10px;
+  border-radius: 20px;
+  
+  
+}
+
+.top-nave .sing .login:hover{
+  background: #505050;
+}
+
+
+
+
+
+ 
+
+
+.palylist{
+  padding: 20px 40px;
+
+}
+.palylist h2{
+color: #ffffff;
+ font-size: 22px;
+ margin-bottom: 20px;
+}
+
+
+.palylist .card{
+
+  display: flex;
+  gap:20px ;
+  overflow: hidden;
+  color: #0f0f0f;
+  
+
+}
+.palylist .card .item{
+ width: 190px;
+ min-width: 140px;
+background-color:#141414 ;
+cursor: pointer;
+padding: 15px;
+border-radius: 10px;
+}
+.palylist .card .item:hover{
+  background-color: #3f3f3f;
+ 
+
+}
+
+.palylist .card .item img{
+  width:100% ;
+ border-radius: 6px;
+ margin-bottom: 10px;
+  
+  }
+  .palylist .card .item p{
+    color: rgb(117, 117, 117);
+  }
+
+.palylist .play-btn{
+  position: relative;
+}
+
+.palylist .play-btn i{
+    
+    position: absolute;
+     
+    background-color: rgb(9, 238, 9);
+    border-radius: 50%;
+    padding: 10px; 
+    font-size: 18px;
+    right: 10px;
+    top: -60px;
+    opacity: 0;
+   
+}
+
+.item h4{
+  color: white;
+}
+
+.palylist .card .item:hover .play-btn i{
+  opacity: 1;
+
+
+} 
+
+/* -------------------------------------- */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: linear-gradient(to right, #a01b68, #5d69c4, #4a82c5);
+  color: #fff;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.footer-text {
+  max-width: 70%;
+}
+
+.footer-text h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.footer-text p {
+  margin: 5px 0 0;
+  font-size: 16px;
+}
+
+.footer-button button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;    /* Smoothly changes the button's background color over 0.3 seconds on hover. */
+}
+
+.footer-button button:hover {
+  background-color: #e0e0e0;
+}
+
